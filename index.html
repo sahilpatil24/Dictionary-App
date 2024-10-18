@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Dictionary App</h1>
+      </nav>
+    </header>
+    <main>
+      <form action="">
+        <input type="text" placeholder="Enter a word" required />
+        <button type="submit">Search</button>
+      </form>
+      <div class="result"></div>
+      <div class="loading" style="display: none">Loading...</div>
+
+      <button id="toggleHistory">Show Search History</button>
+      <div class="history" style="display: none"></div>
+      <!-- Hidden by default -->
+
+      <!-- Hidden by default -->
+    </main>
+    <footer>
+      <p>&copy; Copyright by Shreyas 2024 - 2025</p>
+    </footer>
+
+    <!-- Modal for displaying errors -->
+    <div class="modal" id="errorModal" style="display: none">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="errorMessage"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
